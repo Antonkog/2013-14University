@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+   
+   <EditText
+		android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent"
+    	android:layout_toLeftOf="@+id/btnSearch" 
+    	android:id="@+id/txtViewSearch"
+    	android:hint="Enter search image text">
+   </EditText>
+   
+   <Button
+	   	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/btnSearch"
+    	android:text="Search"
+    	android:layout_alignParentRight="true"
+    	android:onClick="btnSearchClick">
+   </Button>
+
+   <GridView
+       android:id="@+id/gridView1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/txtViewSearch"
+       android:layout_below="@+id/txtViewSearch"
+       android:layout_marginTop="38dp"
+       android:numColumns="3" >
+   </GridView>
+
+   <RelativeLayout
+        android:id="@+id/fragment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+       <ImageView
+           android:id="@+id/imageView1"
+           android:layout_width="fill_parent"
+           android:layout_height="470dp"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:scaleType="fitXY" />
+
+       <Button
+           android:id="@+id/button1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:layout_marginRight="66dp"
+           android:layout_marginTop="53dp"
+           android:text="Clear Image" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

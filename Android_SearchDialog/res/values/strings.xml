@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SearchDialog</string>
+    <string name="add">Добавить</string>
+    <string name="text">Введите текст</string>
+    <string name="no_records">Нет результатов поиска</string>
+    <string name="search_hint">Текст для поиска</string>
+    <string name="search">Поиск</string>
+
+</resources>

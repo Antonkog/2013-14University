@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @Author Paresh N. Mayani
+ * @Web http://www.technotalkative.com
+ */ 
+ -->
+<resources>
+    <string name="hello">Hello World, GoogleSearchAPIExampleActivity!</string>
+    <string name="app_name">GoogleSearchAPIExample</string>
+    
+    <string name="cache_dirname">GoogleImgApp_Cache</string>
+</resources>

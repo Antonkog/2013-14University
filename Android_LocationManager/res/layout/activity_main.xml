@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/activity_main"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitide: " />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude: " />
+
+    <TextView
+        android:id="@+id/altitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Altitude: " />
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Speed: " />
+
+    <TextView
+        android:id="@+id/accuracy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accuracy: " />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:text="Start scan" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="buttonClick"
+        android:text="Stop scan" />
+
+</LinearLayout>

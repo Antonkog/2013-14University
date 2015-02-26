@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:background="#201808"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:layout_toLeftOf="@+id/btnSearch"
+            android:id="@+id/txtViewSearch"
+            android:hint="Enter search image text">
+        </EditText>
+
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/btnSearch"
+            android:text="Search"
+            android:layout_alignParentRight="true"
+            android:onClick="btnSearchClick">
+        </Button>
+
+        <GridView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:columnWidth="150dp"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:id="@+id/gridImages"
+            android:layout_below="@+id/btnSearch"
+            android:layout_marginTop="5dip">
+        </GridView>
+
+        </RelativeLayout>
+   
+
+        <ImageView
+            android:id="@+id/expanded_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:visibility="invisible" />
+
+</FrameLayout>

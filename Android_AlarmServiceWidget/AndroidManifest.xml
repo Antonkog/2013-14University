@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_alarmwidget"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <receiver
+			 android:name="AlarmServiceWidget"
+			 android:icon="@android:drawable/star_big_on"
+			 android:label="Alarm Service widget">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+	    			<action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+	    			<action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+			</intent-filter>
+			<meta-data
+				 android:name="android.appwidget.provider"
+				 android:resource="@xml/widget_metadata">
+			</meta-data>
+		</receiver>
+		
+        <service android:name="com.example.android_alarmwidget.SimpleService" > 
+            
+   			<intent-filter>
+   			    <action android:name="com.example.android_alarmwidget.ServicePendingIntent"></action>
+   			</intent-filter>
+		</service>
+        
+    </application>
+
+</manifest>

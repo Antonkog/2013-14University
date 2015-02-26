@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/select"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Select"/>
+    
+    <item
+        android:id="@+id/insert"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Insert"/>
+    
+    <item
+        android:id="@+id/update"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Update"/>
+    
+    <item
+        android:id="@+id/delete"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Delete all"/>
+    
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+</menu>

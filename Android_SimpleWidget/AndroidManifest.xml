@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android_simplewidget"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <receiver
+			 android:name="SimpleWidget"
+			 android:icon="@android:drawable/ic_menu_myplaces"
+			 android:label="SimpleWidget">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+				<action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+				<action android:name="android.appwidget.action.APPWIDGET_DISABLED" /> 
+			</intent-filter>
+			<meta-data
+				 android:name="android.appwidget.provider"
+				 android:resource="@xml/widget_metadata">
+			</meta-data>
+		</receiver>
+        
+    </application>
+
+</manifest>

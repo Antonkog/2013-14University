@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+ xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:orientation="vertical">
+
+<Button
+    android:id="@+id/buttonStart"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:onClick="onStart"
+    android:text="@string/start" >
+
+</Button>
+
+<Button
+    android:id="@+id/buttonStop"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:onClick="onStop"
+    android:text="@string/stop" >
+
+</Button>
+
+<Button
+    android:id="@+id/buttonShow"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:onClick="onShow"
+    android:text="Show services" />
+
+<Button
+    android:id="@+id/buttonBind"
+    android:layout_width="150dp"
+    android:onClick="onBind"
+    android:layout_height="wrap_content"
+    android:text="Bind" />
+
+<Button
+    android:id="@+id/buttonUnBind"
+    android:layout_width="150dp"
+    android:onClick="onUnBind"
+    android:layout_height="wrap_content"
+    android:text="UnBind" />
+
+<Button
+    android:id="@+id/buttonGetNumber"
+    android:layout_width="150dp"
+    android:onClick="onGetNumber"
+    android:layout_height="wrap_content"
+    android:text="Get number" />
+
+</LinearLayout>

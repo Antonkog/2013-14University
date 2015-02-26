@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	 xmlns:tools="http://schemas.android.com/tools"
+	 android:layout_width="match_parent"
+	 android:layout_height="match_parent"
+	 android:paddingBottom="@dimen/activity_vertical_margin"
+	 android:paddingLeft="@dimen/activity_horizontal_margin"
+	 android:paddingRight="@dimen/activity_horizontal_margin"
+	 android:paddingTop="@dimen/activity_vertical_margin"
+	 tools:context=".MainActivity">
+	<SurfaceView
+		 android:id="@+id/surfaceView"
+		 android:layout_width="200dp"
+		 android:layout_height="150dp"
+		 android:layout_alignParentLeft="true"
+		 android:layout_alignParentTop="true">
+	</SurfaceView>
+	<Button
+		 android:id="@+id/btnTakePicture"
+		 android:layout_width="wrap_content"
+		 android:layout_height="wrap_content"
+		 android:layout_alignParentLeft="true"
+		 android:layout_below="@id/surfaceView"
+		 android:layout_marginRight="10dp"
+		 android:layout_marginTop="10dp"
+		 android:onClick="onClickPicture"
+		 android:text="Take picture">
+	</Button>
+
+	<Button
+	    android:id="@+id/btnStartRecord"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/btnTakePicture"
+	    android:layout_below="@+id/btnTakePicture"
+	    android:onClick="onClickStartRecord"
+	    android:text="Start_record" />
+
+	<Button
+	    android:id="@+id/btnStopRecord"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/btnStartRecord"
+	    android:layout_below="@+id/btnStartRecord"
+	    android:onClick="onClickStopRecord"
+	    android:text="Stop record" />
+
+	<Spinner
+	    android:id="@+id/spEffect"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/btnStopRecord"
+	    android:layout_below="@+id/btnStopRecord" />
+
+	<Spinner
+	    android:id="@+id/spFlash"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/spEffect"
+	    android:layout_below="@+id/spEffect" />
+
+</RelativeLayout>

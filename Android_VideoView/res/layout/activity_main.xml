@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <VideoView
+        android:id="@+id/videoView1"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_above="@+id/buttonStart"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/videoView1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:onClick="buttonsClick"
+        android:text="Start" />
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonResume"
+        android:layout_alignBottom="@+id/buttonResume"
+        android:layout_toRightOf="@+id/buttonStart"
+        android:onClick="buttonsClick"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/buttonResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonStart"
+        android:layout_alignBottom="@+id/buttonStart"
+        android:layout_toRightOf="@+id/buttonPause"
+        android:onClick="buttonsClick"
+        android:text="Cont" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonResume"
+        android:layout_alignBottom="@+id/buttonResume"
+        android:layout_toRightOf="@+id/buttonResume"
+        android:onClick="buttonsClick"
+        android:text="Stop" />
+
+    <Button
+        android:id="@+id/buttonForeward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonStart"
+        android:layout_below="@+id/buttonPause"
+        android:onClick="buttonsClick"
+        android:text="Foreward" />
+
+    <Button
+        android:id="@+id/buttonBackward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/buttonForeward"
+        android:layout_toLeftOf="@+id/buttonStop"
+        android:onClick="buttonsClick"
+        android:text="Backward" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/buttonStop"
+        android:layout_below="@+id/buttonStop"
+        android:text="0.0" />
+
+</RelativeLayout>

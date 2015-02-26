@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+        <Button
+            android:id="@+id/start"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickStart"
+            android:text="Start">
+        </Button>
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Pause">
+        </Button>
+
+        <Button
+            android:id="@+id/btnResume"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Resume">
+        </Button>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Stop">
+        </Button>
+
+        <Button
+            android:id="@+id/btnBackward"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Backward">
+        </Button>
+
+        <Button
+            android:id="@+id/btnForward"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="Forward">
+        </Button>
+
+        <Button
+            android:id="@+id/presetReverb"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:onClick="onClick"
+            android:text="Preset reverb">
+        </Button>
+
+        <Button
+            android:id="@+id/environmentalReverb"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:onClick="onClick"
+            android:text="Environmental reverb">
+        </Button>
+
+</LinearLayout>

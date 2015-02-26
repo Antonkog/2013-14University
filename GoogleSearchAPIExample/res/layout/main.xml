@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+   
+   <EditText
+		android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent"
+    	android:layout_toLeftOf="@+id/btnSearch" 
+    	android:id="@+id/txtViewSearch"
+    	android:hint="Enter search image text">
+   </EditText>
+   
+   <Button
+	   	android:layout_height="wrap_content" 
+    	android:layout_width="wrap_content" 
+    	android:id="@+id/btnSearch"
+    	android:text="Search"
+    	android:layout_alignParentRight="true"
+    	android:onClick="btnSearchClick">
+   </Button>
+   
+   <ListView 
+    	android:layout_height="match_parent" 
+    	android:layout_width="match_parent" 
+    	android:id="@+id/lviewImages"
+    	android:layout_below="@+id/btnSearch"
+    	android:layout_marginTop="5dip">
+   </ListView>
+
+	
+
+</RelativeLayout>
